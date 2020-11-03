@@ -9,9 +9,10 @@
 - numpy>=1.18.5
 - numba>=0.51.2
 - pillow>=8.0.1
+- opencv-python>=4.2.0 
 
 Полученные метрики алгоритма для изображения миры:
-- MSE = 489.27
-- PSNR = 21.24
-- Time of Execution = 7.7 секунд
-- Speed = 889.25 msec/megapixel
+- MSE = 36.54
+- PSNR = 32.50
+- Time of Execution = 11.8 секунд
+- Speed = 1366.44 msec/megapixel
