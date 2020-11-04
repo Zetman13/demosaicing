@@ -13,7 +13,7 @@ input_data = np.asarray(Image.open(input_path), dtype=np.float32)
 target_data = np.asarray(Image.open(target_path), dtype=np.float32)
 
 start = time.time()
-result_data = ppg(input_data)
+result_data = ppg(input_data, postprocess_iterations=3)
 exec_time = time.time() - start
 
 print(f'Time of execution: {exec_time} seconds')
@@ -23,4 +23,4 @@ print(f'PSNR: {psnr(result_data, target_data)}')
 
 
 im = Image.fromarray(result_data.astype(np.uint8))
-im.save('images/Result.bmp')
+im.save('images/Result_post3.bmp')
